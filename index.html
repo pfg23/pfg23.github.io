@@ -1,2 +1,47 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head><meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>Studio Vavatini</title><meta content="Phil Garofalo" name="author"><meta content="GitHub Web Host Test" name="description"></head><body><h1 style="text-align: center;"><img style="width: 242px; height: 95px;" alt="Studio Vavatini" title="Studio Vavatini" src="VavatiniLogoSilver.png"></h1><h1 style="text-align: center; color: rgb(53, 4, 102);">Studio Vavatini</h1><br>Hi There!</body></html>
+<html>
+  <head>
+    <meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+    <title>Studio Vavatini</title>
+    <meta content="Phil Garofalo" name="author">
+    <meta content="GitHub Web Host Test" name="description">
+    <link href="http://berjon.com/blog/2009/07/force-svg.html" rel="force-svg">
+    <script type="application/javascript">(function ()
+{
+  function ForceSVGInHTML()
+  {
+    window.removeEventListener("load", ForceSVGInHTML, true);
+    var svgs = document.getElementsByTagName("svg");
+    for (var i = 0; i < svgs.length; i++) {
+      var svg = svgs[i];
+      var div = document.createElement("div");
+      div.appendChild(svg.cloneNode(true));
+      var dom = (new DOMParser()).parseFromString(div.innerHTML, "application/xml");
+      svg.parentNode.replaceChild(document.importNode(dom.documentElement, true), svg);
+    }
+  }
+  window.addEventListener("load", ForceSVGInHTML, true);
+})();</script>
+  </head>
+  <body>
+    <h1 style="text-align: center;"><br>
+    </h1>
+    <h1 style="text-align: center; color: rgb(53, 4, 102);">Studio Vavatini</h1>
+    <br>
+    <div style="text-align: center;"><svg xmlns="http://www.w3.org/2000/svg" height="500.00001"
+        width="500.00001">
+        <metadata id="metadata4819">image/svg+xml</metadata>
+        <g>
+          <title>Layer 1</title>
+          <g id="svg_1">
+            <path d="m80,70l5.173828,38l-40.173828,0l56.169922,297.939453l22.658195,0.078125l4.171883,31.982422l240,0l4.058594,-31.117188l21.402344,0.078125l54.539063,-299.960938l-36.173828,0l4.173828,-37l-336,0z"
+              id="path5366" stroke-width="0" stroke="#000000" fill-rule="evenodd"
+              fill="#003f7f"></path>
+            <g id="text4807" stroke-width="1px" stroke="#000000" fill="#ffffff">
+              <path d="m224.5522,381.390106l-92.109375,-257.695343l56.425781,0l65.214844,190.722656l63.105453,-190.722656l55.195313,0l-92.285156,257.695343l-55.54686,0z"
+                id="path4812" stroke="#000000" fill="#ffffff" stroke-width="0"></path>
+            </g> </g> </g>
+      </svg></div>
+    Hi There!
+  </body>
+</html>
